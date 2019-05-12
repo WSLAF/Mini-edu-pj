@@ -1,0 +1,22 @@
+<!--列表页-->
+<view class='container'>
+  <!--顶部标题栏-->
+  <!-- <text class='page-title'>{{title}}</text> -->
+  <!-- <view class='page-header'></view> -->
+  <!--列表-->
+  <view class='outer'>
+  <view class='page-body' wx:for="{{chapter}}" wx:key="id">
+      <block>
+          <view class='chapter'>
+            <text class='name'>{{item.name}}</text>
+              <view class='subChapters' wx:for="{{item.subChapter}}" wx:key="id">
+              <navigator class='chapters' url='../chapterContent/chapterContent'>
+              <text class="chapterName">{{item.name}}</text>
+              </navigator>
+              </view>
+              <text>\n</text>
+          </view>
+      </block>
+  </view>
+  </view>
+</view>

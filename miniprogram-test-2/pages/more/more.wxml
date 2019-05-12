@@ -1,0 +1,31 @@
+<!--列表页-->
+<view class='container'>
+  <!--顶部标题栏-->
+  <!--列表-->
+  <view class='outer'>
+  <!-- <view class='page-body' wx:for="{{chapter}}" wx:key="id"> -->
+      <block>
+          <!-- <view class='progress'> -->
+          <navigator class='learningRecords' url = '../learningRecords/learningRecords'>
+            <button class='learningRecordsBt'>
+              <text>学习记录</text>
+            </button>
+          </navigator>
+          <!-- </view> -->
+          <!-- <view class='homeworkCondition'> -->
+          <!-- <button class='homeworkCondition'>
+          <text>作业情况</text>
+          </button> -->
+          <!-- </view> -->
+          <navigator class='issue' url = '../issue/issue'>
+          <button class='issueBt'>
+          <text class="t1">发布</text>
+          </button>
+          </navigator>
+          <button class='reply'>
+          <text class="t2">回复</text>
+          </button>
+      </block>
+  </view>
+  </view>
+

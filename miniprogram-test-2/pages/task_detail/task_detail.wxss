@@ -1,0 +1,7 @@
+.outer {
+  margin-top: -9ex;
+  /* margin-left: -30ex; */
+}
+.answer{
+  margin-top:3ex;
+}

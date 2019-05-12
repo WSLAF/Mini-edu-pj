@@ -1,0 +1,14 @@
+<!--列表页-->
+<view class='container'>
+  <!--顶部标题栏-->
+  <!-- <text class='page-title'>{{title}}</text> -->
+  <!-- <view class='page-header'></view> -->
+  <!--列表-->
+  <view class='outer'>
+      <view class='task'>
+        <text class='title'>dfa</text>
+      </view>
+      <textarea class = 'answer' placeholder='输入答案'></textarea>
+      <button>提交</button>
+  </view>
+</view>

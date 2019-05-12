@@ -1,0 +1,9 @@
+.chapter {
+  margin-left: -3.8cm;
+}
+.outer {
+  margin-top: -9ex;
+}
+.name {
+  color: grey;
+}

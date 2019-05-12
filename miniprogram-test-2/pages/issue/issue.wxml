@@ -1,0 +1,4 @@
+<!--pages/issue/issue.wxml-->
+<textarea placeholder='输入内容'></textarea>
+<button class = "issue">发布</button>
+
