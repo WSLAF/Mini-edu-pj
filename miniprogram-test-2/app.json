@@ -8,8 +8,7 @@
     "pages/task_detail/task_detail",
     "pages/chapterContent/chapterContent",
     "pages/learningRecords/learningRecords",
-    "pages/issue/issue",
-    "pages/reply/reply"
+    "pages/discussion/discussion"
   ],
   "window": {
     "backgroundTextStyle": "light",

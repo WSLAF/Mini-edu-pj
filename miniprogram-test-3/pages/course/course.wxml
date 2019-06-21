@@ -1,0 +1,42 @@
+<text>pages/course/course.wxml</text>
+
+<view class="container">
+  <view class="course" >
+  <view wx:for="{{course_name}}">
+  <navigator
+    url="../contents/contents?content_id={{item.content_id}}"
+    hover-class="navigator-hover">
+    <button>{{item.course_name}}</button>
+    </navigator>
+  </view>
+    </view>
+      </view>
+  <!-- <view class="course">
+    <navigator
+    url="../contents/contents?content_id=network"
+    hover-class="navigator-hover">
+    <button>计算机网络</button>
+    </navigator>
+  </view>
+  <view class="course">
+    <navigator
+    url="../contents/contents?content_id=datastructure"
+    hover-class="navigator-hover">
+    <button>数据结构</button>
+    </navigator>
+  </view>
+</view>   -->
+
+  <!-- <view class="course">
+    <navigator
+    url="../contents/contents?content_id=network"
+    hover-class="navigator-hover">
+    <button>计算机网络</button>
+    </navigator>
+  </view>
+  <view class="course">
+    <navigator
+    url="../contents/contents?content_id=datastructure"
+    hover-class="navigator-hover">
+    <button>数据结构</button>
+    </navigator>

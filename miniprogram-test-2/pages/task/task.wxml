@@ -7,13 +7,13 @@
   <view class='outer'>
   <view class='page-body' wx:for="{{tasks}}" wx:key="id">
       <block>
-        <navigator class='tasks' url='../task_detail/task_detail'>
+        <navigator class='tasks' url='../task_detail/task_detail?homework_id={{item.homework_id}}'>
           <view class='task'>
             <button class="taskBt">
-              <text class="homework">{{item.type}}</text>
+              <text class="homework">{{item.homework_title}}</text>
             </button>
-            <text class='title'>{{item.title}}</text>
-            <text class='status'>({{item.status}})</text>
+            <!-- <text class='title'>{{item.title}}</text>
+            <text class='status'>({{item.status}})</text> -->
           </view>
         </navigator>
       </block>

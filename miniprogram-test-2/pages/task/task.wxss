@@ -15,7 +15,7 @@
 }
 .taskBt{
   margin-left:-4.2cm;
-  width:6ex;
+  width:50ex;
   height:6ex;
   background-color: rgba(0, 183, 255, 0.39);
 }

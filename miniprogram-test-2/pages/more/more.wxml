@@ -17,14 +17,11 @@
           <text>作业情况</text>
           </button> -->
           <!-- </view> -->
-          <navigator class='issue' url = '../issue/issue'>
-          <button class='issueBt'>
-          <text class="t1">发布</text>
+          <navigator class='discussion' url = '../discussion/discussion'>
+          <button class='discussionBt'>
+          <text class="t1">讨论区</text>
           </button>
           </navigator>
-          <button class='reply'>
-          <text class="t2">回复</text>
-          </button>
       </block>
   </view>
   </view>

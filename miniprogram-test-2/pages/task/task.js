@@ -1,45 +1,98 @@
+//logs.js
+const util = require('../../utils/util.js')
+
 Page({
-    data: {
-      tasks: [{
-        title: "任务一",
-        status: "未完成",
-        type: "作业"
-      }, {
-        title: "任务二",
-        status: "已完成",
-          type: "作业"
-      }, {
-        title: "任务三",
-        status: "未完成",
-        type: "作业"
-      }, {
-        title: "任务四",
-        status: "未完成",
-        type: "作业"
-        }, {
-          title: "任务五",
-          status: "未完成",
-          type: "作业"
-        }, {
-          title: "任务六",
-          status: "未完成",
-          type: "作业"
-        }, {
-          title: "任务七",
-          status: "未完成",
-          type: "作业"
-        }, {
-          title: "任务八",
-          status: "未完成",
-          type: "作业"
-        }, {
-          title: "任务九",
-          status: "未完成",
-          type: "作业"
-        }
-      ]
+  onLoad: function (options) {
+    this.getChapter(options);
+    this.getSubchapter(options);
   },
+
+  getChapter: function (options) {
+    var that = this;
+    wx.request({
+      url: 'http://localhost:4000/api/homeworkList/1',
+      header: {
+        "Content-Type": "application/json"
+      },
+      method: "GET",
+      data: {
+        // id:""
+      },
+      success: function (res) {
+        console.log(res.data);
+        that.setData({
+          tasks: res.data
+        })
+      },
+      fail: function (err) { }, //请求失败
+      complete: function () { }
+    })
+  },
+
+  getSubchapter: function (options) {
+    var that = this;
+    wx.request({
+      url: 'http://localhost:4000/api/lecturesmallclass/1',
+      header: {
+        "Content-Type": "application/json"
+      },
+      method: "GET",
+      data: {
+        // id:""
+      },
+      success: function (res) {
+        console.log(res.data);
+        that.setData({
+          lecture_small_title: res.data
+        })
+      },
+      fail: function (err) { }, //请求失败
+      complete: function () { }
+    })
+  }
 })
+// Page({
+//     data: {
+//       tasks: [{
+//         title: "任务一",
+//         status: "未完成",
+//         type: "作业"
+//       }, {
+//         title: "任务二",
+//         status: "已完成",
+//           type: "作业"
+//       }, {
+//         title: "任务三",
+//         status: "未完成",
+//         type: "作业"
+//       }, {
+//         title: "任务四",
+//         status: "未完成",
+//         type: "作业"
+//         }, {
+//           title: "任务五",
+//           status: "未完成",
+//           type: "作业"
+//         }, {
+//           title: "任务六",
+//           status: "未完成",
+//           type: "作业"
+//         }, {
+//           title: "任务七",
+//           status: "未完成",
+//           type: "作业"
+//         }, {
+//           title: "任务八",
+//           status: "未完成",
+//           type: "作业"
+//         }, {
+//           title: "任务九",
+//           status: "未完成",
+//           type: "作业"
+//         }
+//       ]
+//   },
+// })
 // // pages/list/list.js
 // Page({
 
