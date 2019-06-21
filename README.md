@@ -1,1 +1,1 @@
-  这是一个用于课程学习的微信小程序，教师后端在mini_project_browserpart-server-master中，使用nodejs开发，通过命令行指令node server.js来运行。本项目教师前台和后端由朴世勋同学开发。罗翱放完成微信小程序具体某个课程的相关页面，郑文峰完成微信小程序具体某个课程以外的相关页面。
+  这是一个用于课程学习的微信小程序，教师后端在mini_project_browserpart-server-master中，使用nodejs开发，通过命令行指令node server.js来运行。本项目教师前台和后端由朴世勋同学开发。罗翱放完成微信小程序具体某个课程的相关页面，在miniprogram。郑文峰完成微信小程序具体某个课程以外的相关页面。
