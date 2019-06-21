@@ -1,0 +1,42 @@
+.outer {
+  margin-top: -9ex;
+  margin-left: -23ex;
+}
+.learningRecordsBt {
+  width: 55ex;
+  height:4ex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+/* .homeworkCondition {
+  width: 55ex;
+  height:4ex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+} */
+.release {
+  width:55ex;
+  height: 4ex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.reply {
+  width: 55ex;
+  height: 4ex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+/* .t1 {
+  -align: center;
+  font-size:1ex;
+  margin-left:-4ex;
+}
+.t2 {
+  text-align: center;
+  font-size:1ex;
+  margin-left:-4ex;
+} */

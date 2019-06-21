@@ -1,0 +1,22 @@
+<!--列表页-->
+<view class='container'>
+  <!--顶部标题栏-->
+  <!-- <text class='page-title'>{{title}}</text> -->
+  <view class='page-header'></view>
+  <!--列表-->
+  <view class='outer'>
+  <view class='page-body' wx:for="{{tasks}}" wx:key="id">
+      <block>
+        <navigator class='tasks' url='../task_detail/task_detail?homework_id={{item.homework_id}}'>
+          <view class='task'>
+            <button class="taskBt">
+              <text class="homework">{{item.homework_title}}</text>
+            </button>
+            <!-- <text class='title'>{{item.title}}</text>
+            <text class='status'>({{item.status}})</text> -->
+          </view>
+        </navigator>
+      </block>
+  </view>
+  </view>
+</view>

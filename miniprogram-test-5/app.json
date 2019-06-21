@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/task/task",
+    "pages/chapter/chapter",
+    "pages/more/more",
+    "pages/index1/index1",
+    "pages/logs/logs",
+    "pages/task_detail/task_detail",
+    "pages/chapterContent/chapterContent",
+    "pages/learningRecords/learningRecords",
+    "pages/discussion/discussion",
+    "pages/chatbox/chatbox"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#abc",
+    "navigationBarTitleText": "高级web",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/task/task",
+        "text":"任务"
+      },
+      {
+        "pagePath":"pages/chapter/chapter",
+        "text":"章节"
+      },
+      {
+        "pagePath":"pages/more/more",
+        "text":"更多"
+      }                                                                                                                                                                                                                                                                                                                                                                
+    ],
+    "position":"top"
+  },
+  "sitemapLocation": "sitemap.json"
+}

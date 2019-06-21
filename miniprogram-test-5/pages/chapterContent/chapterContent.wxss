@@ -1,0 +1,9 @@
+.myVideo {
+  width: 100%;
+}
+
+/* .section tc {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+} */

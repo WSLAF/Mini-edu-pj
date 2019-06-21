@@ -1,0 +1,13 @@
+<!--pages/learningRecords/learningRecords.wxml-->
+<!-- <text>pages/learningRecords/learningRecords.wxml</text> -->
+<view>
+  <label id = "progress"> 
+    <text>课程完成进度: \n</text>
+    <text decode="{{true}}">完成数:{{lectureCompletedNum}} &nbsp; 总课程数:{{lectureNum}} \n \n</text>
+  </label>
+  <label id = "homework">
+    <text>作业情况： \n</text>
+    <text decode="{{true}}">完成情况:{{homeworkCompletedNum}} / {{homeworkNum}} &nbsp;</text>
+    <text>平均分：{{averageScore}} </text>
+    </label>
+</view>

@@ -1,0 +1,24 @@
+<!--列表页-->
+  <view class='container'>
+  <!--顶部标题栏-->
+  <!-- <text class='page-title'>{{title}}</text> -->
+  <view class='page-header'></view>
+  <!--列表-->
+
+<view class='outer'>
+  <view class='page-body' wx:for="{{lecture_b_title}}" wx:key="lecture_b_id">
+      <block>
+          <view class='chapter'>
+            <text class='name'>{{item.lecture_b_title}}</text>
+              <view class='subChapters' wx:for="{{lecture_small_title}}" wx:key="" wx:for-item="items">
+              <navigator class='chapters' url='../chapterContent/chapterContent?lecture_s_id={{items.lecture_s_id}}'>
+              <text wx:if="{{items.lecture_b_id==item.lecture_b_id}}" text class="chapterName">{{items.lecture_s_title}}</text>
+              </navigator>
+              </view>
+              <text>\n</text>
+          </view>
+      </block>
+  </view>
+</view>
+</view>
+
