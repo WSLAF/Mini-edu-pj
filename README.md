@@ -1,1 +1,1 @@
-另外教师端的代码在https://github.com/qkrsh0424/mini_project_browserpart
+  这是一个用于课程学习的微信小程序，
